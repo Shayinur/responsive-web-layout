@@ -47,8 +47,9 @@ h1 a, .top-nav a {
     text-align: center;
 }
 .introduction img {
-    width: 200px;
+    width: 100%;
     height: auto;
+    padding: 0 50px 0 50px;
 }
 .introduction .intro {
     padding: 0 25px;
@@ -90,7 +91,6 @@ h1 a, .top-nav a {
     
 }
 /* Media Queries */
-/*navigation*/
 @media (min-width: 768px) {
     .top-nav {
         margin-top: 0;
@@ -108,6 +108,15 @@ h1 a, .top-nav a {
     .introduction {
         display: flex;
         flex-direction: row-reverse;
+        width: 100%;
+        text-align: left;
+    }
+    .introduction img {
+        padding: 0 25px 0 25px;
+    }
+    .intro,
+    .introduction img {
+        width: auto;
     }
     .container {
         display: inline-flex;
@@ -121,9 +130,6 @@ h1 a, .top-nav a {
         padding: 15;
     }
   
-   
-    
-
 }
 @media (min-width: 1024px) {
     nav {
@@ -137,6 +143,13 @@ h1 a, .top-nav a {
         margin-bottom: 0;
     }
     .profile-image {
-        margin-right: 25px;
+        width: auto;
+    }
+    .container {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    .col {
+        flex-basis: 33.333%;
     }
 }
