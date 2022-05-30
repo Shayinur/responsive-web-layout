@@ -36,7 +36,9 @@ h1 a,
 .top,
 .intro,
 .footer-nav a,
-footer h2  {
+footer h2,
+.skills h3,
+.skills p  {
     color: #fff;
 }
 
@@ -55,21 +57,22 @@ footer h2  {
 .top-nav a {
     text-transform: uppercase;
 }
-/*Introduction */
+
 .introduction {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.introduction img {
+.introduction img,
+.skills img {
     width: 100%;
     height: auto;
-    padding: 0 50px 0 50px;
+    padding: 0 50px;
 }
 .introduction .intro {
     padding: 0 25px;
 }
-/*Portfolio */
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -105,21 +108,26 @@ footer h2  {
     font-weight: 150 bold;
     
 }
-/* contact section */
+
+
 .contact {
     background-color: #EDE3D2;
 }
-.contact h3 {
+.contact h3,
+.skills h3 {
     text-transform: uppercase;
     margin: 0;
     padding: 20px;
 }
-.contact p {
+.contact p,
+.skills p {
     padding: 10px;
     margin: 0;
 }
 .contact h3, 
-.contact p {
+.contact p,
+.skills h3,
+.skills p {
     text-align: center;
 }
 /*footer section*/
@@ -160,7 +168,7 @@ footer {
         text-align: left;
     }
     .introduction img {
-        padding: 0 25px 0 25px;
+        padding: 0 25px;
     }
     .intro,
     .introduction img {
