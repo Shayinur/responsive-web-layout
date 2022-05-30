@@ -191,7 +191,7 @@ footer {
         flex-basis: 50%;
     }
     .col img {
-        padding: 15;
+        padding: 15px;
     }
     .top {
         display: none;
